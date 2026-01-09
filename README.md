@@ -39,6 +39,7 @@ To prevent button spamming, the game includes a **cooldown timer** after every m
 4.Play the game in your browser 🎉
 
 Option 2: Run via GitHub Pages
+
 1.Go to Settings → Pages
 
 2.Set source to main branch
