@@ -29,8 +29,9 @@ To prevent button spamming, the game includes a **cooldown timer** after every m
 
 ### Option 1: Run Locally
 1. Download or clone this repository
-   ```bash
-   git clone https://github.com/your-username/rock-paper-scissors.git
+  [ ```bash
+   git clone https://github.com/your-username/rock-paper-scissors.git](https://github.com/keithbenedict02/DC101_RockPaperScissors_FazKeithBenedict.git)
+   
 2.Open the project folder
 
 3.Double-click index.html
@@ -55,4 +56,4 @@ Option 2: Run via GitHub Pages
 
 5.First click enables background music 🔊
 
-![Rock Paper Scissors Game Screenshot](assets/screenshot.png)
+![Rock Paper Scissors Game Screenshot](assets/screenshot.jpg)
