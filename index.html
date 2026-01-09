@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rock Paper Scissors</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ROCK • PAPER • SCISSORS</h1>
+    <button id="muteBtn"><i class="fas fa-volume-up"></i></button>
+</header>
+
+<div class="container">
+
+    
+    <audio id="clickSound" src="assets/click.mp3"></audio>
+    <audio id="winSound" src="assets/win.mp3"></audio>
+    <audio id="loseSound" src="assets/lose.mp3"></audio>
+    <audio id="drawSound" src="assets/draw.mp3"></audio>
+    <audio id="bgm" src="assets/bgm.mp3" loop></audio>
+
+    <div class="score-container">
+        <span class="user">YOU</span>
+        <span id="score">0 - 0</span>
+        <span class="com">COM</span>
+    </div>
+
+    <div class="buttons">
+        <button id="paper" class="bn" value="paper" onclick="game(this.value)">
+            <i class="far fa-hand-paper"></i>
+        </button>
+        <button id="rock" class="bn" value="rock" onclick="game(this.value)">
+            <i class="far fa-hand-rock"></i>
+        </button>
+        <button id="scissors" class="bn" value="scissors" onclick="game(this.value)">
+            <i class="far fa-hand-scissors"></i>
+        </button>
+    </div>
+
+    <div id="challenge">
+        <div id="you">
+            <div id="YourObject"></div>
+            <div class="who">You</div>
+        </div>
+
+        <div id="com">
+            <div id="ComObject"></div>
+            <div class="who">Computer</div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="result-overlay">
+    <p id="overlay-text"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+    background-size:600% 600%;
+    animation:bg 12s ease infinite;
+    color:white;
+}
+@keyframes bg{0%{background-position:0%}50%{background-position:100%}100%{background-position:0%}}
+
+
+header{
+    padding:15px;
+    text-align:center;
+    position:relative;
+}
+header h1{
+    font-family:'Orbitron',sans-serif;
+    letter-spacing:4px;
+    text-shadow:0 0 15px cyan;
+}
+#muteBtn{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+
+.score-container{
+    margin:20px auto;
+    width:200px;
+    text-align:center;
+}
+#score{
+    font-family:'Orbitron';
+    font-size:32px;
+    text-shadow:0 0 10px cyan;
+}
+
+
+.buttons{
+    text-align:center;
+    margin-top:40px;
+}
+.bn{
+    width:90px;height:90px;
+    border-radius:50%;
+    border:3px solid cyan;
+    background:black;
+    color:white;
+    font-size:42px;
+    margin:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+.bn:hover{box-shadow:0 0 20px cyan}
+
+
+#challenge{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:600px;
+    margin:40px auto;
+}
+#YourObject,#ComObject{
+    width:120px;height:120px;
+    border-radius:50%;
+    border:3px solid cyan;
+    font-size:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:black;
+}
+.who{
+    text-align:center;
+    margin-top:10px;
+}
+
+
+.green{box-shadow:0 0 25px lime;border-color:lime}
+.red{box-shadow:0 0 25px red;border-color:red}
+.gray{box-shadow:0 0 25px gray;border-color:gray}
+
+
+#result-overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+    opacity:0;
+    pointer-events:none;
+    transition: opacity 0.3s ease;
+}
+#result-overlay.show{
+    opacity:1;
+    pointer-events:auto;
+}
+#result-overlay p{
+    font-family:'Orbitron',sans-serif;
+    font-size:60px;
+    color: cyan;
+    text-align:center;
+    text-shadow:0 0 20px cyan,0 0 40px cyan,0 0 60px cyan;
+}
